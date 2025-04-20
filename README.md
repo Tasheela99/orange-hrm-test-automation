@@ -15,7 +15,6 @@ Before running the tests, ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Tasheela99/orange-hrm-test-automation.git
-   cd OrangeHRMAutomation
    ```
 
 2. Create a virtual environment (optional but recommended):
@@ -43,6 +42,16 @@ The application configuration is located in `Config.py`. Update the following va
 1. To run all tests:
    ```bash
    pytest TestCases/TestOrangeHRM.py
+   ```
+
+2. To generate an HTML report after all tests are completed and save it in the `Reports` folder with a timestamp:
+   ```bash
+   pytest TestCases/TestOrangeHRM.py --html=Reports/report_$(date +%Y%m%d_%H%M%S).html
+   ```
+
+3. To suppress warnings while generating the report:
+   ```bash
+   pytest TestCases/TestOrangeHRM.py --html=Reports/report_$(date +%Y%m%d_%H%M%S).html --disable-warnings
    ```
 
 ## Logs and Screenshots
