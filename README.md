@@ -70,6 +70,7 @@ OrangeHRMAutomation/
 ├── PageObjects/             # Page Object Model classes
 ├── TestCases/               # Test case scripts
 ├── Logs/                    # Log files (auto-generated)
+├── Reports/                 # Reports (auto-generated when running with the command)
 ├── Screenshots/             # Screenshots (auto-generated)
 └── README.md                # Project documentation
 ```
